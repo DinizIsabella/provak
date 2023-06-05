@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Site</title>
+</head>
+<body>
+    <center>
+        <nav>
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <div class="logo">
+      <a href="index.html">Isabella
+      </a>
+      </div>
+      <ul class="menu-desktop">
+          <li> <a href="#">home </a> </li>
+          <li> <a href="#">Clubes</a> </li>
+          <li> <a href="#">Jogadoras</a> </li>
+          <li> <a href="#">Contato</a> </li>
+      </ul>
+      <ul class="menu-mobile">
+         <div class="icon-close" >
+          
+         </div>
+          <li> <a href="#">home </a> </li>
+          <li> <a href="#">Clubes</a> </li>
+          <li> <a href="#">Jogadoras</a> </li>
+          <li> <a href="#">Contato</a> </li>
+      </ul>
+      <div class="menu-icon">
+          <i class="fa fa-bars" aria-hidden="true"></i>
+      </div>
+        </nav>
+      <section class="banner">
+          <div class="texto">
+              <h2 class="título">sobre futebol feminino</h2>
+      <div class="botoes">
+          <button class="n-overlay">Saiba Mais</button>
+          <button class="overlay">Inscrever</button>
+      
+      </div>
+          </div>
+      
+      </section>
+          <script>
+              var menuIcon = dicument.querySelector('.menu-icon');
+              var menuMobile = document.querySelector('.menu-mobile'); 
+              var iconClose = document.querySelector('.menu-mobile .icon-close');
+      
+              menuIcon.addEventlistener('click',function(){
+                  menuMobile.classList.add('ativo');
+              });
+      
+      
+          </script>
+      </center> 
+</body>
+</html>
